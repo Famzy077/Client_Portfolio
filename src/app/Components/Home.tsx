@@ -1,12 +1,11 @@
 'use client'
 import React from 'react'
-// import PopupNav from './NavBar'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import { faChartSimple, faHeadphones,faEnvelope,faBook, faBookOpenReader, faFilm, faXmark, faBriefcase, faLink, faLaptop, faCalendar, faGraduationCap, faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import { faChartSimple, faHeadphones, faEnvelope, faBook, faBookOpenReader, faFilm, faXmark, faBriefcase, faLink, faLaptop, faCalendar, faGraduationCap, faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin, faSquareFacebook, faInstagram, faSquareXTwitter} from '@fortawesome/free-brands-svg-icons';
-import ExcelLogo from './Images/Excel.png'
+import ExcelLogo from './Images/Excel.png';
 import SpssLogo from './Images/SPss.png';
 import PowerBI from './Images/PowerBi.png';
 import MySQL from './Images/MySQL.png';
