@@ -1,15 +1,13 @@
 'use client'
 import React from 'react'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faDollar } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import { faChartSimple, faHeadphones, faEnvelope, faBook, faBookOpenReader, faFilm, faXmark, faBriefcase, faLink, faLaptop, faCalendar, faGraduationCap, faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import { faChartSimple, faHeadphones, faEnvelope, faBook, faBookOpenReader, faXmark, faBriefcase, faLink, faLaptop, faCalendar, faGraduationCap, faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin, faSquareFacebook, faInstagram, faSquareXTwitter} from '@fortawesome/free-brands-svg-icons';
 import ExcelLogo from './Images/Excel.png';
-import SpssLogo from './Images/SPss.png';
 import PowerBI from './Images/PowerBi.png';
 import MySQL from './Images/MySQL.png';
-import GoogleDataStudioLogo from './Images/GoogledataStudio.png';
 import Pythonimg from './Images/Python.png';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
@@ -32,7 +30,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ children }) => {
     const [readMore, setReadMove] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
-    const [selectedCategory ,setSelectedCategory] = useState('all')
+    // const [selectedCategory ,setSelectedCategory] = useState('all')
     const handleClick =() =>{
         setIsOpen(false)
     }
@@ -42,6 +40,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
     const handleReadMore = () => {
         setReadMove(!readMore)
     }
+
   return (
     <div>
         <main className=' text-white absolute top-0'>
@@ -59,9 +58,9 @@ const Home: React.FC<HomeProps> = ({ children }) => {
             <main className='flex justify-between items-center p-2 md:p-3'>
                 <div className='flex logo_box items-center gap-4'>
                     <div className=' md:w-[60px] w-[52px] h-[52px] md:h-[60px] place-items-center place-content-center rounded-full bg-black'>
-                        <h1 className='section2 text-white text-2xl md:text-3xl font-semibold cursor-pointercls'>ET</h1>
+                        <h1 className='section2 text-white text-2xl md:text-3xl font-semibold cursor-pointercls'>TE</h1>
                     </div>
-                    <h2 className='akin text-center text-xl md:text-4xl font-semibold'>Esther Temitope</h2>
+                    <h2 className='akin text-center text-xl md:text-4xl font-semibold'>Temitope Esther</h2>
                 </div>
                 <div className='flex p-2 md:p-4 rounded-full  px-3 md:px-7 bg-black gap-3 relative mr-8'>
                     <h1 className='text-white text-xl md:text-2xl font-semibold pr-2 md:pr-4'>Menu</h1>
@@ -77,10 +76,10 @@ const Home: React.FC<HomeProps> = ({ children }) => {
 
         <section className='section1 h-[fit-content] p-2 md:p-5 overflow-x-hidden'>
             <div className='nameBox m-20 mb-6 md-10 md:mx-[16rem] rounded-[4rem] p-4 border-4 border-blue-800'>
-                <h1 className='nameh1 text-blue-700 font-bold text-6xl flex justify-around'><span className='text-white'>I′m</span>Esther <span>Temitope</span></h1>
+                <h1 className='nameh1 text-blue-700 font-bold text-6xl flex justify-around'><span className='text-white'>I′m</span>Temitope <span>Esther</span></h1>
             </div>
             <main className='text-center mx-2 my-5 text-xl md:text-2xl text-white'>
-                <h1>A Dedicated Data Analyst | Data Science with<span className='bg-blue-800 rounded-full px-2 capitalize'> years of experience</span></h1>
+                <h1>A Data Analyst | Experienced in Real-World  Projects</h1>
             </main>
             <div className='mt-3 text-center'>
                 <button className='border-2 px-4 border-blue-800 text-blue-800 p-2 rounded-2xl mr-3 hover:text-white hover:bg-blue-800'><Link href='https://docs.google.com/document/d/1st8dBQjf1B3-etQ3O8cSJW2KazoGTUNy/edit?tab=t.0'>Resume</Link></button>
@@ -88,10 +87,6 @@ const Home: React.FC<HomeProps> = ({ children }) => {
             </div>
             <section className='flex gap-0 md:gap-6 justify-center p-1 md:p-4'>
                 <div className='mt-10 relative'>
-                    <div className='bg-white w-[90px] md:w-[170px] absolute top-[3rem] left-[2rem] md:left-[-1rem] rounded-full p-1 md:p-2 pr-0 md:pr-5 pl-3 flex items-center text-black gap-2 md:gap-4 font-semibold'>
-                        <Image className='w-[1.2rem] md:w-[3rem]' src={ExcelLogo} alt="skills-img" />
-                        <h1 className='text-xs md:text-xl'>Excel</h1>
-                    </div>
                     <div className='bg-white w-[90px] md:w-[185px] absolute md:top-[11.5rem] top-[7rem] right-[-5.5rem] md:right-[-5.5rem] skillIcon rounded-full p-1 md:p- pr-0 md:pr-5 pl-1 md:pl-3 flex items-center text-black gap-1 md:gap-4 font-semibold'>
                         <Image className='w-[1.2rem] md:w-[3rem]' src={PowerBI} alt="skills-img" />
                         <h1 className='text-xs md:text-xl'>Power BI</h1>
@@ -105,13 +100,10 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                     <Image className='w-[300px] md:w-[100%]' src={Estherprofile} alt="profileImage" />
                 </div>
                 <div className='mt-10 relative'>
-                    <div className='bg-white w-[100px] md:w-[200px] absolute top-[3rem] right-[2rem] md:right-[-2rem] rounded-full p-1 md:p-2 pr-5 pl-3 flex items-center text-black gap-1 md:gap-4 font-semibold'>
-                        <Image className='rounded-full w-[1.2rem] md:w-[3rem]' src={GoogleDataStudioLogo} alt="skills-img" />
-                        <h1 className='text-xs md:text-xl'> G D S</h1>
-                    </div>
-                    <div className='bg-white w-[95px] md:w-[200px] absolute md:top-[11.5rem] top-[7rem] left-[-6rem] md:left-[-7rem] rounded-full p-1 pr-2 md:pr-5 pl-3 flex items-center text-black gap-1 md:gap-4 font-semibold'>
-                        <Image className='rounded-full w-[1.2rem] md:w-[3rem]' src={SpssLogo} alt="skills-img" />
-                        <h1 className='text-xs md:text-xl'>SPSS</h1>
+                    
+                    <div className='bg-white w-[90px] md:w-[170px] absolute top-[7rem] md:top-[11.5rem] left-[-6rem] md:left-[-6rem] rounded-full p-1 md:p-2 pr-0 md:pr-5 pl-3 flex items-center text-black gap-2 md:gap-4 font-semibold'>
+                        <Image className='w-[1.2rem] md:w-[2.4rem]' src={ExcelLogo} alt="skills-img" />
+                        <h1 className='text-xs md:text-xl'>Excel</h1>
                     </div>
                     <div className='bg-white w-[90px] md:w-[180px] absolute md:top-[20em] top-[11rem] left-[-7.5rem] md:left-[-9rem] skillIcon rounded-full md:p-1 p-1 pr-2 md:pr-5 pl-3 flex items-center text-black gap-2 md:gap-4 font-semibold'>
                         <Image className='rounded-full w-[1.2rem] md:w-[2.4rem]' src={Pythonimg} alt="skills-img" />
@@ -132,8 +124,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         <Image className='rounded-full border-4 border-blue-600 w-[4rem] h-[fit-content] object-fill' src={SecondProfile} alt='love-picture'/>
                         <h1 className='text-4xl md:text-6xl text-blue-800 font-extrabold'>I love</h1>
                     </div>
-                    <div className='md:flex md:flex-wrap gap-4 items-center'>
-                        <div className='flex bg-blue-100 p-2 items-center gap-4 text-2xl md:text-3xl font-semibold px-5 rounded-full text-blue-800  md:mt-0 mt-4'>
+                    <div className='md:flex md:flex-wrap gap-4  items-center'>
+                        <div className='flex bg-blue-100 p-2 items-center gap-4 text-2xl md:text-3xl font-semibold px-5 rounded-full text-blue-800  md:mt-0 mb-4'>
                             <FontAwesomeIcon className='w-[2rem]' icon={faBookOpenReader}/>
                             <h2>storytelling</h2>
                         </div>
@@ -148,8 +140,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                             <h2>Music</h2>
                         </div>
                         <div className='flex bg-blue-100 p-2 items-center gap-4 text-2xl md:text-3xl font-semibold px-5 rounded-full text-blue-800 md:mt-0 mt-4'>
-                            <FontAwesomeIcon className='w-[1.4rem]' icon={faFilm} />
-                            <h2>movies</h2>
+                            <FontAwesomeIcon className='w-[1.4rem]' icon={faDollar} />
+                            <h2>Money</h2>
                         </div>
                     </div>
                 </div>
@@ -168,7 +160,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
         </div>
         <section className='p-7'>
             <div className='bg-blue-950 aboutText p-5 md:p-10 rounded-2xl font-sans text-white'>
-                <p className='my-4 md:my-5 text-xl md:text-2xl '>I&apos;m Bisiriyu Esther Temitope I am a detail-oriented and results-driven Data Analyst with a background in finance and a strong proficiency in data analysis, business intelligence, and data visualization.</p>
+                <p className='my-4 md:my-5 text-xl md:text-2xl '>I&apos;m Bisiriyu Esther Temitope, I am a detail-oriented and results-driven Data Analyst with a background in finance and a strong proficiency in data analysis, business intelligence, and data visualization.</p>
 
                 {readMore && (
                     <div>
@@ -186,15 +178,15 @@ const Home: React.FC<HomeProps> = ({ children }) => {
             </div>
         </section>
         <section id='Project' className='mx-2'>
-            <h1 className='text-blue-600 text-3xl md:text-6xl text-center mt-10 font-semibold'>Works</h1>
-            <h1 className='text-blue-800 text-3xl md:text-6xl text-center mb-10 translate-y-[-2.5rem]  md:translate-y-[-3.3rem] font-semibold'>Works</h1>
-            <main className='place-content-center gap-6 md:gap-26 flex my-10 cursor-pointer'>
+            <h1 className='text-blue-600 text-3xl md:text-6xl text-center mt-10 font-semibold'>Projects</h1>
+            <h1 className='text-blue-800 text-3xl md:text-6xl text-center mb-10 translate-y-[-2.5rem]  md:translate-y-[-3.3rem] font-semibold'>Projects</h1>
+            {/* <main className='place-content-center gap-6 md:gap-26 flex my-10 cursor-pointer'>
                 <button onClick={() => setSelectedCategory('all')} className='bg-blue-100 font-semi text-xl md:text-4xl font-semibold text-blue-800 px-2 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl shadow shadow-slate-100'>All</button>
                 <button onClick={() => setSelectedCategory('dashboard')} className='border-2 bg-blue-100 font-semi border-blue-800 text-xl md:text-4xl font-semibold text-blue-800 px-2 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Dashboard</button>
                 <button onClick={() => setSelectedCategory('data-vitualization')} className='border-2 bg-blue-100 font-semi border-blue-800 text-xl md:text-4xl font-semibold text-blue-800 cursor-pointer px-1 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Data</button>
-            </main>
+            </main> */}
             <div className='project grid md:grid-cols-2 mx-0 m-2 md:m-10 gap-5 text-white'>
-                {selectedCategory === 'all' || selectedCategory === 'Backend' ? (
+                {/* {selectedCategory === 'all' || selectedCategory === 'Backend' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='/https://drive.google.com/drive/folders/1c3KMYPTmppm-Gyt2m-Bthj7m3X_qL4Ap?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -221,13 +213,14 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Dax</p>
                             </div>
                         </div>
+                        <p>Description: </p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 w-[100%]'>
                             <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/1c3KMYPTmppm-Gyt2m-Bthj7m3X_qL4Ap?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
-                ) : null}
-                {selectedCategory === 'all' || selectedCategory === 'dashboard' ? (
+                {/* // ) : null} */}
+                {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='/https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -259,8 +252,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         </div>
                     </div>
                 </div>
-                ) : null}
-                {selectedCategory === 'all' || selectedCategory === 'dashboard' ? (
+                {/* ) : null} */}
+                {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/15ZY-p6Mf1OniN9F1692KlyYADTtwxzUB?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -288,12 +281,12 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                             </div>
                         </div>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='/https://drive.google.com/drive/folders/15ZY-p6Mf1OniN9F1692KlyYADTtwxzUB?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/15ZY-p6Mf1OniN9F1692KlyYADTtwxzUB?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
-                ) : null}
-                {selectedCategory === 'all' || selectedCategory === 'dashboard' ? (
+                {/* // ) : null} */}
+                 {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -321,12 +314,12 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                             </div>
                         </div>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='/https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
-                ) : null}
-                {selectedCategory === 'all' || selectedCategory === 'dashboard' ? (
+                {/* // ) : null} */}
+                {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/1193TgyVsrdSvk1Q35dzj1IN9qisaVFDH?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -358,8 +351,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         </div>
                     </div>
                 </div>
-                ) : null}
-                {selectedCategory === 'all' || selectedCategory === 'dashboard' ? (
+                {/* // ) : null} */}
+                {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/1HFpdQBDITEl9-T7v02Y8LkbQaBj14ffU?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -394,8 +387,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         </div>
                     </div>
                 </div>
-                ) : null}
-                {selectedCategory === 'all' || selectedCategory === 'data-vitualization' ? (
+                {/* ) : null} */}
+                {/* {selectedCategory === 'all' || selectedCategory === 'data-vitualization' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -407,7 +400,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         <main className='flex gap-3'>
                             <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
                                 <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Data visualization</h2>
+                                <h2>Data Clearning</h2>
                             </div>
                         </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
@@ -417,11 +410,11 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                             </div>
                         </div>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='/https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
-                ) : null}
+                {/* ) : null} */}
             </div>
         </section>
         <p id='Experience'></p>
@@ -492,7 +485,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 </main>
                 <main className='bg-blue-200 rounded-3xl p-5 md:p-10 w-[100%]'>
                     <div className='flex-wrap md:flex justify-between'>
-                        <p className='bg-black text-white text-xl md:text-2xl rounded-full p-2 pl-3'><FontAwesomeIcon className='pr-2 text-2xl' icon={faCalendar}/>2016 - 2021x</p>
+                        <p className='bg-black text-white text-xl md:text-2xl rounded-full p-2 pl-3'><FontAwesomeIcon className='pr-2 text-2xl' icon={faCalendar}/>2016 - 2021</p>
                         <p className='bg-white mt-5 pl-3 md:mt-0 text-blue-800 font-semibold text-2xl rounded-full p-2'>University</p>
                     </div>
                     <h1 className='my-4 flex gap-4 text-blue-900 items-center text-xl font-semibold'><FontAwesomeIcon className='bg-black text-white rounded-full text-xl p-2 w-[1.5rem] h-[1.5rem]' icon={faGraduationCap}/>University Of Lagos</h1>
@@ -518,7 +511,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                             <h1 className='text-black'>X (Twiter)</h1>
                         </Link>
                     </div>
-                    <div className='md:my-0 my-[1rem]' >
+                    <div className='md:my-0' >
                         <Link className='flex md:gap-[0.5rem] px-2 justify-between bg-white text-2xl font-semibold md:text-4xl items-center p-1 md:p-2 rounded-full' href='http://Instagram.com/esther_temi0'>
                             <FontAwesomeIcon className='bg-red-500 text-white p-2 w-[2.5rem] h-[2.5rem] rounded-full' icon={faInstagram} />
                             <h1 className='text-red-500'>Instagram</h1>
@@ -542,16 +535,13 @@ const Home: React.FC<HomeProps> = ({ children }) => {
             </main>
         </section>
         <footer className='flex bg-blue-800 my-[2rem] items-center md:text-3xl font-semibold border-2 border-blue-800 p-5 px-10 rounded-full justify-between mx-[2.3rem] md:mx-[10rem]'>
-            <div className=' md:w-[60px] w-[52px] h-[52px] md:h-[60px] place-items-center place-content-center rounded-full bg-black'>
-                <h1 className='section2 text-white text-2xl md:text-3xl font-semibold cursor-pointercls'>ET</h1>
-            </div>
-            <div className='font-light text-white'>
-                <h1>Designed and Built by <Link className='underline decoration-[black]' href={'https://www.akinolafemi.com.ng'}>akinola femi</Link></h1>
-            </div>
+            <p>{`© copy ${date} all right reserved`}</p>
         </footer>
         {children}
     </div>
   )
 }
+
+const date = new Date().getFullYear();
 
 export default Home
