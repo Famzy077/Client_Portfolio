@@ -13,7 +13,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Link from 'next/link';
 import Estherprofile from './Images/Estherprofile.png'
-import SuparStore from './Images/SuparStore.jpg'
+import SuparStore from './Images/Dashboard  Page 1.png'
 import SecondProfile from './Images/secondProfile.jpg'
 import BeautyStore from './Images/BeautyStore.jpg'
 import SalesPerformance from './Images/Sales_Performance.png'
@@ -412,7 +412,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Excel</p>
                             </div>
                         </div>
-                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> This project involved cleaning and preparing a raw sales dataset using Microsoft Excel to ensure accuracy and consistency for analysis.</p>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> This project involved cleaning and preparing a raw dataset using Microsoft Excel to ensure accuracy and consistency for analysis.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
                             <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
