@@ -28,6 +28,16 @@ nav ul li:hover {
   transform: scale(1.1);
 }
 
+.description{
+  font-family: 'Poppins', sans-serif;
+  /* font-weight: 600; */
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 10px 2px;
+  color: #f1f1f1 !important;
+}
+
 /* Style the thumb (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
   background: #888;

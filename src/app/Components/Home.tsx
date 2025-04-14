@@ -178,19 +178,51 @@ const Home: React.FC<HomeProps> = ({ children }) => {
             </div>
         </section>
         <section id='Project' className='mx-2'>
-            <h1 className='text-blue-600 text-3xl md:text-6xl text-center mt-10 font-semibold'>Projects</h1>
-            <h1 className='text-blue-800 text-3xl md:text-6xl text-center mb-10 translate-y-[-2.5rem]  md:translate-y-[-3.3rem] font-semibold'>Projects</h1>
+            <h1 className='text-blue-600 section2 text-3xl md:text-6xl text-center mt-10 font-semibold'>Projects</h1>
+            {/* <h1 className='text-blue-800 text-3xl md:text-6xl text-center mb-10 translate-y-[-2.5rem]  md:translate-y-[-3.3rem] font-semibold'>Projects</h1> */}
             {/* <main className='place-content-center gap-6 md:gap-26 flex my-10 cursor-pointer'>
                 <button onClick={() => setSelectedCategory('all')} className='bg-blue-100 font-semi text-xl md:text-4xl font-semibold text-blue-800 px-2 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl shadow shadow-slate-100'>All</button>
                 <button onClick={() => setSelectedCategory('dashboard')} className='border-2 bg-blue-100 font-semi border-blue-800 text-xl md:text-4xl font-semibold text-blue-800 px-2 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Dashboard</button>
                 <button onClick={() => setSelectedCategory('data-vitualization')} className='border-2 bg-blue-100 font-semi border-blue-800 text-xl md:text-4xl font-semibold text-blue-800 cursor-pointer px-1 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Data</button>
             </main> */}
             <div className='project grid md:grid-cols-2 mx-0 m-2 md:m-10 gap-5 text-white'>
+                <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
+                    <Link href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <div className='mt-10 mb-2'>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SalesPerformance} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1 className='text-2xl md:text-3xl font-extrabold'>Sales Performance</h1>
+                        <p className='text-2xl font-semibold my-2'>Project Category</p>
+                        <main className='flex gap-3'>
+                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
+                                <FontAwesomeIcon icon={faBriefcase} />
+                                <h2>Sales Dashboard</h2>
+                            </div>
+                        </main>
+                        <p className='text-2xl font-semibold my-3'>Technologies Used</p>
+                        <div className='flex gap-3'>
+                        <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>Power Bi</p>
+                            </div>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>DAX</p>
+                            </div>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>Power Query</p>
+                            </div>
+                        </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> I designed an interactive Power BI dashboard to analyze sales performance using filters for quarter and year, allowing users to explore trends over time.</p>
+                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2'>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                        </div>
+                    </div>
+                </div>
                 {/* {selectedCategory === 'all' || selectedCategory === 'Backend' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='/https://drive.google.com/drive/folders/1c3KMYPTmppm-Gyt2m-Bthj7m3X_qL4Ap?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl' src={Beauty_Dashboard} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={Beauty_Dashboard} alt='project-image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Beauty Store</h1>
@@ -210,12 +242,12 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Bi</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Dax</p>
+                                <p>DAX</p>
                             </div>
                         </div>
-                        <p>Description: </p>
-                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 w-[100%]'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/1c3KMYPTmppm-Gyt2m-Bthj7m3X_qL4Ap?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> I developed a Power BI dashboard to track and analyze sales performance for a beauty store, focusing on metrics such as total sales, profit, order volume, and customer segments.</p>
+                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2'>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1c3KMYPTmppm-Gyt2m-Bthj7m3X_qL4Ap?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
@@ -224,7 +256,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='/https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl' src={SuparStore} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SuparStore} alt='project-image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Super Store</h1>
@@ -241,14 +273,15 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Bi</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
-                                <p>Dax</p>
+                                <p>DAX</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
                                 <p>Power Query</p>
                             </div>
                         </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> Using Power BI, I developed an interactive dashboard to analyze the Superstore dataset, focusing on sales, profit, and order trends across various regions.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 w-[100%]'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing/'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing/'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
@@ -257,7 +290,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/15ZY-p6Mf1OniN9F1692KlyYADTtwxzUB?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl h-[9rem] md:h-[17rem]' src={BeautyStore} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={BeautyStore} alt='project-image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Active Wear Sales</h1>
@@ -274,47 +307,15 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Bi</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Dax</p>
+                                <p>DAX</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
                                 <p>Power Query</p>
                             </div>
                         </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> I created a Power BI dashboard to analyze sales performance for an activewear company, focusing on key metrics such as total revenue, profit, order quantity, and profit margin.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/15ZY-p6Mf1OniN9F1692KlyYADTtwxzUB?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
-                        </div>
-                    </div>
-                </div>
-                {/* // ) : null} */}
-                 {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
-                <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
-                    <Link href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
-                    <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl h-[9rem] md:h-[17rem]' src={SalesPerformance} alt='project-image'/>
-                    </div>
-                    <div>
-                        <h1 className='text-2xl md:text-3xl font-extrabold'>Sales Performance</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Sales Dashboard</h2>
-                            </div>
-                        </main>
-                        <p className='text-2xl font-semibold my-3'>Technologies Used</p>
-                        <div className='flex gap-3'>
-                        <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Power Bi</p>
-                            </div>
-                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Dax</p>
-                            </div>
-                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Power Query</p>
-                            </div>
-                        </div>
-                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/15ZY-p6Mf1OniN9F1692KlyYADTtwxzUB?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
@@ -323,7 +324,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/1193TgyVsrdSvk1Q35dzj1IN9qisaVFDH?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl h-[9rem] md:h-[17rem]' src={HR_Attrition} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={HR_Attrition} alt='project-image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>HR Attrition</h1>
@@ -343,11 +344,12 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Bi</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Dax</p>
+                                <p>DAX</p>
                             </div>
                         </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> In this project, I analyzed employee attrition data using Power BI to uncover key factors contributing to turnover. I built an interactive dashboard that visualized metrics such as attrition rates by department.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/1193TgyVsrdSvk1Q35dzj1IN9qisaVFDH?usp=sharing/'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1193TgyVsrdSvk1Q35dzj1IN9qisaVFDH?usp=sharing/'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
@@ -356,7 +358,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/1HFpdQBDITEl9-T7v02Y8LkbQaBj14ffU?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl h-[9rem] md:h-[17rem]' src={SalesAndProfit} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SalesAndProfit} alt='project-image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Sales And Profit Insight</h1>
@@ -376,14 +378,15 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Bi</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Dax</p>
+                                <p>DAX</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
                                 <p>SQL</p>
                             </div>
                         </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> I performed exploratory data analysis using SQL and built an interactive Power BI dashboard to visualize sales, profit, COGS, and discount impact across countries, segments, and products.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/1HFpdQBDITEl9-T7v02Y8LkbQaBj14ffU?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1HFpdQBDITEl9-T7v02Y8LkbQaBj14ffU?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
@@ -392,7 +395,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl h-[9rem] md:h-[17rem]' src={DataClearning} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={DataClearning} alt='project-image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Data Cleaning</h1>
@@ -409,8 +412,9 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Excel</p>
                             </div>
                         </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> This project involved cleaning and preparing a raw sales dataset using Microsoft Excel to ensure accuracy and consistency for analysis.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
-                            <Link className='bg-black px-3 md:px-6 p-1 rounded-xl w-[70%] text-center' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
@@ -419,7 +423,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
         </section>
         <p id='Experience'></p>
         <section>
-            <h1 className='text-blue-800 section2 font-semibold text-4xl md:text-5xl text-center mt-20 md:mt-20 mb-0 md:mb-2'>Experiences</h1>
+            <h1 className='text-blue-800 section2 font-semibold text-4xl md:text-5xl text-center mt-20 md:mt-15 mb-0 md:mb-[-1.3rem]'>Experiences</h1>
             <main className='exprience p-5 md:p-10 grid grid-cols-1 gap-7 md:grid-cols-2 text-white'>
                 <div className=' bg-blue-800 opacity-85 rounded-3xl pb-[2rem]'>
                     <div className='md:flex flex-wrap gap-5 p-3 md:p-6 justify-between'>
@@ -496,8 +500,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
         </div>
         <section className='my-[4rem]'>
             <p id='Contact'></p>
-            <h1 className='text-5xl text-center section2  text-blue-600 font-semibold'>Contact <span className='pl-2'>Me</span></h1>
-            <main className='my-[2rem]'>
+            <h1 className='text-5xl text-center section2 text-blue-600 font-semibold'>Contact <span className='pl-2'>Me</span></h1>
+            <main className='my-[2rem] mt-[-0.9rem] md:mt-[0.6rem] md:mb-[2rem] mb-0'>
                 <div className='md:flex flex-wrap gap-5 justify-center p-3'>
                     <div className='md:my-0 my-[1rem]' >
                         <Link className='flex md:gap-[0.5rem] px-2 justify-between bg-white text-2xl font-semibold md:text-4xl items-center p-1 md:p-2 rounded-full' href='https://www.linkedin.com/in/esther-temitope-bisiriyu-845203207/'>
@@ -519,7 +523,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                     </div>
                 </div>
                 <div className='md:flex flex-wrap gap-5 justify-center p-3'>
-                    <div className='md:my-0 mt-[1rem]' >
+                    <div className='md:my-0' >
                         <Link className='flex md:gap-[0.5rem] px-2 justify-between bg-white text-2xl font-semibold md:text-4xl items-center p-1 md:p-2 rounded-full' href='https://web.facebook.com/olasunboabiodun.bisiriyu'>
                             <FontAwesomeIcon className='bg-blue-800 text-white p-2 w-[2.5rem] h-[2.5rem] rounded-full' icon={faSquareFacebook} />
                             <h1 className='text-blue-800'>Facebook</h1>
