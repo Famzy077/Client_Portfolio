@@ -212,7 +212,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Query</p>
                             </div>
                         </div>
-                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> I designed an interactive Power BI dashboard to analyze sales performance using filters for quarter and year, allowing users to explore trends over time.</p>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> I designed an interactive Power BI dashboard to visualize and analyze sales performance across different dimensions. Users can explore trends using dynamic filters for quarter and year, allowing for a deeper understanding of key metrics like total sales, orders, customers, and regional performance.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2'>
                             <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
