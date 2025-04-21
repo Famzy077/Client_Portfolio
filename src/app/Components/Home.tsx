@@ -22,6 +22,7 @@ import Beauty_Dashboard from './Images/Beauty_Dashboard.png'
 import HR_Attrition from './Images/HR_Attrition_Dashboard.png'
 import DataClearning from './Images/DataCleaning.png'
 import JobImg from './Images/job.png';
+import CarInsurance from './Images/CarInsurance.jpg'
 
 interface HomeProps {
   children: React.ReactNode;
@@ -288,7 +289,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/13Xs5QuPgTLD0bJ4zybn-vH2y81jIQEzh?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SuparStore} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={CarInsurance} alt='project-image' title='car Insurance image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Car Insurance Claims Analysis</h1>
@@ -311,7 +312,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Query</p>
                             </div>
                         </div>
-                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> An interactive Power BI dashboard exploring trends in car insurance claims. The project includes data cleaning with Power Query, age grouping, and custom measures to highlight claim frequency, cost patterns, and policyholder demographics. Key insights uncover high-risk car models, age groups, and cost drivers, supporting data-driven decision-making.</p>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> An interactive Power BI dashboard exploring trends in car insurance claims. The project includes data cleaning with Power Query, age grouping, and custom measures to highlight claim frequency, cost patterns, and policyholder demographics. </p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 w-[100%]'>
                             <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/13Xs5QuPgTLD0bJ4zybn-vH2y81jIQEzh?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
