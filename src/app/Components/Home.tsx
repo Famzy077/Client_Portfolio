@@ -187,7 +187,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
             </main> */}
             <div className='project grid md:grid-cols-2 mx-0 m-2 md:m-10 gap-5 text-white'>
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
-                    <Link href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <Link href='https://drive.google.com/drive/folders/1NjgNTSJj9gOQVYo8kr_JlPQZ_9H0CtQr?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
                         <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SalesPerformance} alt='project-image'/>
                     </div>
@@ -214,13 +214,13 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         </div>
                         <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> I designed an interactive Power BI dashboard to visualize and analyze sales performance across different dimensions. Users can explore trends using dynamic filters for quarter and year, allowing for a deeper understanding of key metrics like total sales, orders, customers, and regional performance.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2'>
-                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/10zKS6VJeQWCDMSnQYwvf4sMg4840n7_p?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1NjgNTSJj9gOQVYo8kr_JlPQZ_9H0CtQr?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
                 {/* {selectedCategory === 'all' || selectedCategory === 'Backend' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
-                    <Link href='/https://drive.google.com/drive/folders/1c3KMYPTmppm-Gyt2m-Bthj7m3X_qL4Ap?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <Link href='https://drive.google.com/drive/folders/1c3KMYPTmppm-Gyt2m-Bthj7m3X_qL4Ap?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
                         <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={Beauty_Dashboard} alt='project-image'/>
                     </div>
@@ -254,7 +254,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 {/* // ) : null} */}
                 {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
-                    <Link href='/https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <Link href='https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
                         <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SuparStore} alt='project-image'/>
                     </div>
@@ -282,6 +282,38 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> Using Power BI, I developed an interactive dashboard to analyze the Superstore dataset, focusing on sales, profit, and order trends across various regions.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 w-[100%]'>
                             <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing/'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                        </div>
+                    </div>
+                </div>
+                <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
+                    <Link href='https://drive.google.com/drive/folders/13Xs5QuPgTLD0bJ4zybn-vH2y81jIQEzh?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <div className='mt-10 mb-2'>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SuparStore} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1 className='text-2xl md:text-3xl font-extrabold'>Car Insurance Claims Analysis</h1>
+                        <p className='text-2xl font-semibold my-2'>Project Category</p>
+                        <main className='flex gap-3'>
+                            <div className='bg-white p-2 px-4 rounded-full text-blue-800 flex items-center gap-2'>
+                                <FontAwesomeIcon icon={faBriefcase} />
+                                <h2>Car Insurance Project</h2>
+                            </div>
+                        </main>
+                        <p className='text-2xl font-semibold my-3'>Technologies Used</p>
+                        <div className='flex gap-3'>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
+                                <p>Power Bi</p>
+                            </div>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
+                                <p>DAX</p>
+                            </div>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>Power Query</p>
+                            </div>
+                        </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> An interactive Power BI dashboard exploring trends in car insurance claims. The project includes data cleaning with Power Query, age grouping, and custom measures to highlight claim frequency, cost patterns, and policyholder demographics. Key insights uncover high-risk car models, age groups, and cost drivers, supporting data-driven decision-making.</p>
+                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 w-[100%]'>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/13Xs5QuPgTLD0bJ4zybn-vH2y81jIQEzh?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
