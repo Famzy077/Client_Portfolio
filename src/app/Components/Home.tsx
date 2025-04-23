@@ -563,7 +563,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         </Link>
                     </div>
                     <div className='md:my-0 my-[1rem]' >
-                        <Link className='flex md:gap-[0.5rem] px-2 justify-between bg-white text-2xl font-semibold md:text-4xl items-center p-1 md:p-2 rounded-full' href='bisiriyuesthertemitope@gmail.com'>
+                        <Link className='flex md:gap-[0.5rem] px-2 justify-between bg-white text-2xl font-semibold md:text-4xl items-center p-1 md:p-2 rounded-full' href='mailto:bisiriyuesthertemitope@gmail.com'>
                             <FontAwesomeIcon className='bg-gray-600 text-white p-2 w-[2.5rem] h-[2.5rem] rounded-full' icon={faEnvelope} />
                             <h1 className='text-gray-600'>Email</h1>
                         </Link>
