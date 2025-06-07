@@ -4,7 +4,7 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBars, faDollar } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import { faChartSimple, faHeadphones, faEnvelope, faBook, faBookOpenReader, faXmark, faBriefcase, faLink, faLaptop, faCalendar, faGraduationCap, faLocationDot} from '@fortawesome/free-solid-svg-icons';
-import {faLinkedin, faSquareFacebook, faInstagram, faSquareXTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin, faSquareFacebook, faInstagram, faSquareXTwitter, faGithub} from '@fortawesome/free-brands-svg-icons';
 import ExcelLogo from './Images/Excel.png';
 import PowerBI from './Images/PowerBi.png';
 import MySQL from './Images/MySQL.png';
@@ -23,6 +23,7 @@ import HR_Attrition from './Images/HR_Attrition_Dashboard.png'
 import DataClearning from './Images/DataCleaning.png'
 import JobImg from './Images/job.png';
 import CarInsurance from './Images/CarInsurance.jpg'
+import cocaCola from '/public/coca-cola.jpg'
 
 interface HomeProps {
   children: React.ReactNode;
@@ -187,6 +188,39 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <button onClick={() => setSelectedCategory('data-vitualization')} className='border-2 bg-blue-100 font-semi border-blue-800 text-xl md:text-4xl font-semibold text-blue-800 cursor-pointer px-1 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Data</button>
             </main> */}
             <div className='project grid md:grid-cols-2 mx-0 m-2 md:m-10 gap-5 text-white'>
+                <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
+                    <Link href='https://drive.google.com/drive/folders/1wkhfqN1RL1yFHbYbdbYXiKjeURtGgCmX?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <div className='mt-10 mb-2'>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={cocaCola} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1 className='text-2xl md:text-3xl font-extrabold'>Coca Cola 2022 Business Performance Report</h1>
+                        <p className='text-2xl font-semibold my-2'>Project Category</p>
+                        <main className='flex gap-3'>
+                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
+                                <FontAwesomeIcon icon={faBriefcase} />
+                                <h2>Sales Dashboard</h2>
+                            </div>
+                        </main>
+                        <p className='text-2xl font-semibold my-3'>Technologies Used</p>
+                        <div className='flex gap-3'>
+                        <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>Power Bi</p>
+                            </div>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>DAX</p>
+                            </div>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>Power Query</p>
+                            </div>
+                        </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span>I analyzed Coca-Cola’s 2022 U.S. sales and operating profit using Excel, covering retailers, regions, states, and cities. The dashboard revealed key insights, such as $8.2M in total sales, $3.04M earnings, and Walmart as the top retailer with $4M sales. Coca-Cola led beverage sales at $1.92M with 3.99M units sold. This project delivered clear visualizations and actionable recommendations to support business performance.</p>
+                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 gap-3'>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1wkhfqN1RL1yFHbYbdbYXiKjeURtGgCmX?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://github.com/BisiriyuTemitope/Coca-Cola-2022-Business-Performance-Report'><FontAwesomeIcon className='text-white mr-3' icon={faGithub} />Github</Link>
+                        </div>
+                    </div>
+                </div>
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/1NjgNTSJj9gOQVYo8kr_JlPQZ_9H0CtQr?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
@@ -381,8 +415,9 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                             </div>
                         </div>
                         <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> In this project, I analyzed employee attrition data using Power BI to uncover key factors contributing to turnover. I built an interactive dashboard that visualized metrics such as attrition rates by department.</p>
-                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5'>
+                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 gap-3'>
                             <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1193TgyVsrdSvk1Q35dzj1IN9qisaVFDH?usp=sharing/'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://github.com/BisiriyuTemitope/HR-Attrition-Dashbaord/blob/main/README.md'><FontAwesomeIcon className='text-white mr-3' icon={faGithub} />Github</Link>
                         </div>
                     </div>
                 </div>
@@ -456,7 +491,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
         </section>
         <p id='Experience'></p>
         <section>
-            <h1 className='text-blue-800 section2 font-semibold text-4xl md:text-5xl text-center mt-20 md:mt-15 mb-0 md:mb-[-1.3rem]'>Experiences</h1>
+            <h1 className='text-blue-800 section2 font-semibold text-4xl md:text-5xl text-center mt-10 md:mt-5 mb-0 md:mb-[-1rem]'>Experiences</h1>
             <main className='exprience p-5 md:p-10 grid grid-cols-1 gap-7 md:grid-cols-2 text-white'>
                 <div className=' bg-blue-800 opacity-85 rounded-3xl pb-[2rem]'>
                     <div className='md:flex flex-wrap gap-5 p-3 md:p-6 justify-between'>
@@ -507,8 +542,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 </div>
             </main>
         </section>
-        <div className='p-5 md:px-10 my-4 md:my-8'>
-            <h1 className='text-5xl section2 text-center mt-4 mb-3 text-blue-800 font-bold md:mt-8'>Education</h1>
+        <div className='p-5 md:px-10 my-4 md:my-0'>
+            <h1 className='text-5xl section2 text-center mt-4 mb-3 text-blue-800 font-bold md:mt-4'>Education</h1>
             <div className='grid md:grid-cols-2  gap-10'>
                 <main className='bg-blue-200 rounded-3xl p-5 md:p-10 w-[100%]'>
                     <div className='flex-wrap md:flex justify-between'>
@@ -531,7 +566,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 </main>
             </div>
         </div>
-        <section className='my-[4rem]'>
+        <section className='my-[2rem]'>
             <p id='Contact'></p>
             <h1 className='text-5xl text-center section2 text-blue-600 font-semibold'>Contact <span className='pl-2'>Me</span></h1>
             <main className='my-[2rem] mt-[-0.9rem] md:mt-[0.6rem] md:mb-[2rem] mb-0'>
