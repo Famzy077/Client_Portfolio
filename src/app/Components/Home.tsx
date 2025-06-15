@@ -294,8 +294,8 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={Funiture} alt='project-image'/>
                     </div>
                     <div>
-                        <h1 className='text-2xl md:text-3xl font-extrabold'>Super Store</h1>
-                        <p className='text-2xl font-semibold my-2'>Furniture Sales Analysis</p>
+                        <h1 className='text-2xl md:text-3xl font-extrabold'>Furniture Sales Analysis</h1>
+                        <p className='text-2xl font-semibold my-2'>Project Category</p>
                         <main className='flex gap-3'>
                             <div className='bg-white p-2 px-4 rounded-full text-blue-800 flex items-center gap-2'>
                                 <FontAwesomeIcon icon={faBriefcase} />
