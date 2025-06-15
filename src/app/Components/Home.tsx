@@ -305,13 +305,13 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
-                                <p>Power Bi</p>
+                                <p>Microsoft Excel</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
-                                <p>DAX</p>
+                                <p>Power Query</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Power Query</p>
+                                <p>Pivot Tables</p>
                             </div>
                         </div>
                         <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> Furniture Sales Analysis
