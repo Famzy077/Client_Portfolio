@@ -3,7 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBars, faDollar } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
-import { faChartSimple, faHeadphones, faEnvelope, faBook, faBookOpenReader, faXmark, faBriefcase, faLink, faLaptop, faCalendar, faGraduationCap, faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import { faChartSimple, faHeadphones, faEnvelope, faBook, faBookOpenReader, faXmark, faLink, faLaptop, faCalendar, faGraduationCap, faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin, faSquareFacebook, faInstagram, faSquareXTwitter, faGithub} from '@fortawesome/free-brands-svg-icons';
 import ExcelLogo from './Images/Excel.png';
 import PowerBI from './Images/PowerBi.png';
@@ -195,13 +195,6 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Coca Cola 2022 Business Performance Report</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Sales Dashboard</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                         <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
@@ -228,13 +221,6 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Sales Performance</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Sales Dashboard</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                         <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
@@ -261,13 +247,6 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Beauty Store</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Dashboard Project</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
@@ -295,13 +274,6 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Furniture Sales Analysis</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                {/* <h2>Home Services Project</h2> */}
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
@@ -328,13 +300,6 @@ I Designed a dynamic Excel dashboard to analyze 9,994+ U.S. furniture orders tot
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Car Insurance Claims Analysis</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Car Insurance Project</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-2 md:px-3'>
@@ -362,13 +327,6 @@ I Designed a dynamic Excel dashboard to analyze 9,994+ U.S. furniture orders tot
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Active Wear Sales</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Dashboard</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
@@ -396,13 +354,6 @@ I Designed a dynamic Excel dashboard to analyze 9,994+ U.S. furniture orders tot
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>HR Attrition</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Hr Attrition Dashboard</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
@@ -431,13 +382,6 @@ I Designed a dynamic Excel dashboard to analyze 9,994+ U.S. furniture orders tot
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Sales And Profit Insight</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Sales & Profit Dashboard</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
@@ -468,13 +412,6 @@ I Designed a dynamic Excel dashboard to analyze 9,994+ U.S. furniture orders tot
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Data Cleaning</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
-                        <main className='flex gap-3'>
-                            <div className='bg-white p-2 px-2 md:px-4 rounded-full text-blue-800 flex items-center gap-2'>
-                                <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Data Clearning</h2>
-                            </div>
-                        </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
