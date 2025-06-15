@@ -299,7 +299,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         <main className='flex gap-3'>
                             <div className='bg-white p-2 px-4 rounded-full text-blue-800 flex items-center gap-2'>
                                 <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Home Services Project</h2>
+                                {/* <h2>Home Services Project</h2> */}
                             </div>
                         </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
