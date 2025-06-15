@@ -13,9 +13,9 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Link from 'next/link';
 import Estherprofile from './Images/Estherprofile.png'
-import SuparStore from './Images/Dashboard  Page 1.png'
 import SecondProfile from './Images/secondProfile.jpg'
 import BeautyStore from './Images/BeautyStore.jpg'
+import Funiture from '/public/Funiture.jpg'
 import SalesPerformance from './Images/Sales_Performance.png'
 import SalesAndProfit from './Images/Sales_And_Profit.png'
 import Beauty_Dashboard from './Images/Beauty_Dashboard.png'
@@ -81,7 +81,7 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <h1 className='nameh1 text-blue-700 font-bold text-6xl flex justify-around'><span className='text-white'>I′m</span>Temitope <span>Esther</span></h1>
             </div>
             <main className='text-center mx-2 my-5 text-xl md:text-2xl text-white'>
-                <h1>A Data Analyst | Experienced in Real-World  Projects</h1>
+                <h1>A data analyst and Data Visualization Analyst</h1>
             </main>
             <div className='mt-3 text-center'>
                 <button className='border-2 px-4 border-blue-800 text-blue-800 p-2 rounded-2xl mr-3 hover:text-white hover:bg-blue-800'><Link href='https://docs.google.com/document/d/1st8dBQjf1B3-etQ3O8cSJW2KazoGTUNy/edit?tab=t.0'>Resume</Link></button>
@@ -289,17 +289,17 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 {/* // ) : null} */}
                 {/* {selectedCategory === 'all' || selectedCategory === 'dashboard' ? ( */}
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
-                    <Link href='https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <Link href='https://drive.google.com/drive/folders/1NAcH2gC8gG3_rk2DRTF3hITzdGTonkGl?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
-                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={SuparStore} alt='project-image'/>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={Funiture} alt='project-image'/>
                     </div>
                     <div>
                         <h1 className='text-2xl md:text-3xl font-extrabold'>Super Store</h1>
-                        <p className='text-2xl font-semibold my-2'>Project Category</p>
+                        <p className='text-2xl font-semibold my-2'>Furniture Sales Analysis</p>
                         <main className='flex gap-3'>
                             <div className='bg-white p-2 px-4 rounded-full text-blue-800 flex items-center gap-2'>
                                 <FontAwesomeIcon icon={faBriefcase} />
-                                <h2>Store Project</h2>
+                                <h2>Home Services Project</h2>
                             </div>
                         </main>
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
@@ -314,9 +314,10 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                                 <p>Power Query</p>
                             </div>
                         </div>
-                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> Using Power BI, I developed an interactive dashboard to analyze the Superstore dataset, focusing on sales, profit, and order trends across various regions.</p>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span> Furniture Sales Analysis
+I Designed a dynamic Excel dashboard to analyze 9,994+ U.S. furniture orders totaling over $742K in revenue. Used pivot tables, charts, slicers, and conditional formatting to uncover key business trends. Insights included peak sales in December ($121K), top-performing category (Chairs: $328K), and highest-grossing city (New York City: $75.7K). The dashboard enables strategic decision-making across product lines, regions, and shipping performance.</p>
                         <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 mt-5 w-[100%]'>
-                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/11LUEOIXoM8Lx8efMsEHU5s-GzkUlz4aX?usp=sharing/'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1NAcH2gC8gG3_rk2DRTF3hITzdGTonkGl?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
                         </div>
                     </div>
                 </div>
