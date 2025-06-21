@@ -198,13 +198,10 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                         <p className='text-2xl font-semibold my-3'>Technologies Used</p>
                         <div className='flex gap-3'>
                         <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Power Bi</p>
+                                <p>Microsoft Excel</p>
                             </div>
                             <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>DAX</p>
-                            </div>
-                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
-                                <p>Power Query</p>
+                                <p>Pivot tables</p>
                             </div>
                         </div>
                         <p className='text-white font-serif description'><span className='font-semibold'>Description:</span>I analyzed Coca-Cola’s 2022 U.S. sales and operating profit using Excel, covering retailers, regions, states, and cities. The dashboard revealed key insights, such as $8.2M in total sales, $3.04M earnings, and Walmart as the top retailer with $4M sales. Coca-Cola led beverage sales at $1.92M with 3.99M units sold. This project delivered clear visualizations and actionable recommendations to support business performance.</p>
