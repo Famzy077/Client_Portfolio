@@ -24,6 +24,7 @@ import DataClearning from './Images/DataCleaning.png'
 import JobImg from './Images/job.png';
 import CarInsurance from './Images/CarInsurance.jpg'
 import cocaCola from '/public/coca-cola.jpg'
+import Sales from '/public/SalesPerformance.jpg'
 
 interface HomeProps {
   children: React.ReactNode;
@@ -188,6 +189,29 @@ const Home: React.FC<HomeProps> = ({ children }) => {
                 <button onClick={() => setSelectedCategory('data-vitualization')} className='border-2 bg-blue-100 font-semi border-blue-800 text-xl md:text-4xl font-semibold text-blue-800 cursor-pointer px-1 md:px-9 p-1 hover:text-white hover:bg-blue-800 transition-all rounded-xl'>Data</button>
             </main> */}
             <div className='project grid md:grid-cols-2 mx-0 m-2 md:m-10 gap-5 text-white'>
+                <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
+                    <Link href='https://drive.google.com/drive/folders/1kR5e1Mr6l3ytDxT-5Zhe0uy8yTJp4M3m?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
+                    <div className='mt-10 mb-2'>
+                        <Image className='rounded-2xl h-[fit-content] md:h-[19.5rem]' src={Sales} alt='project-image'/>
+                    </div>
+                    <div>
+                        <h1 className='text-2xl md:text-3xl font-extrabold'>Sales Performance Dashboard (2023 vs 2024)</h1>
+                        <p className='text-2xl font-semibold my-3'>Technologies Used</p>
+                        <div className='flex gap-3'>
+                        <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>Microsoft Excel</p>
+                            </div>
+                            <div className='bg-white text-blue-800 rounded-full p-1 px-3'>
+                                <p>Pivot tables</p>
+                            </div>
+                        </div>
+                        <p className='text-white font-serif description'><span className='font-semibold'>Description:</span>I designed this interactive Excel dashboard to analyze year-over-year sales data, revealing a 30% increase in revenue ($475.6K) and a 34% rise in profit ($411.6K) in 2024. The dashboard breaks down sales by region, product, and month—highlighting strong growth in the South region and top-performing products like Monitors and Mouse. It also includes cost analysis, which rose 11% YoY, and provides actionable recommendations to improve underperforming areas and optimize cost efficiency.</p>
+                        <div className=' text-white text-xl md:text-2xl font- rounded-xl flex justify-around my-2 gap-3'>
+                            <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://drive.google.com/drive/folders/1kR5e1Mr6l3ytDxT-5Zhe0uy8yTJp4M3m?usp=sharing'><FontAwesomeIcon className='text-white mr-3' icon={faLink} />View</Link>
+                            {/* <Link className='bg-black w-[70%] text-white px-3 md:px-6 p-1 rounded-xl text-center transition-transform duration-300 hover:scale-105 hover:bg-blue-600' href='https://github.com/BisiriyuTemitope/Coca-Cola-2022-Business-Performance-Report'><FontAwesomeIcon className='text-white mr-3' icon={faGithub} />Github</Link> */}
+                        </div>
+                    </div>
+                </div>
                 <div className='p-5 mx-3 bg-blue-950 rounded-3xl relative'>
                     <Link href='https://drive.google.com/drive/folders/1wkhfqN1RL1yFHbYbdbYXiKjeURtGgCmX?usp=sharing'><FontAwesomeIcon className='absolute right-10 text-blue-800 bg-white p-[5px] cursor-pointer rounded-full top-3 w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem]' icon={faLink}/></Link>
                     <div className='mt-10 mb-2'>
